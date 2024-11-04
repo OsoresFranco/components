@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { TreeTableComponent } from '../../components/tree-table/tree-table.component';
 import { TreeTableItemComponent } from '../../components/tree-table-item/tree-table-item.component';
 import { CommonModule } from '@angular/common';
+import { SpinnerComponent } from '../../components/spinner/spinner.component';
 
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss'],
   standalone: true,
-  imports: [TreeTableComponent, TreeTableItemComponent, CommonModule],
+  imports: [TreeTableComponent, TreeTableItemComponent, CommonModule, SpinnerComponent],
 })
 export class DemoComponent {
   headers: string[] = [
